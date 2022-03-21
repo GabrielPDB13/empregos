@@ -1,0 +1,36 @@
+<HTML lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<BODY style="background-color: Gainsboro  ;">
+
+	<a href="http://localhost:8080/">
+	<button type="button" class="">HOME</button>
+	</a>
+	
+	
+	<H1 style="color:Black; text-aling:center">INSERIR GAME</H1>
+
+<form method="post">
+	
+	<H3	style="color:Black;">
+	NOME DA JOGO: <input type="text" value="" name="nomeempregos"> 
+	<input type="submit" value="OK">
+	</H3>
+		
+		
+</form> 
+
+<span th:text="${mensagem}"> </span> 
+
+<H4 style="color:Black;">
+	<div th:each="vg : ${empregos}">
+	<span th:text="${vg.id}"> </span>
+	<span th:text="${vg.nomeempregos}"> </span>
+</H4>	
+	
+</div>
+
+	
+
+</BODY>
+
+</HTML>
